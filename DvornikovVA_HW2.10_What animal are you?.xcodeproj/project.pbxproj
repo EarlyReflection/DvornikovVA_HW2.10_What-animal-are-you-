@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D16E57E529081BB60008226F /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E57E429081BB60008226F /* AnimalViewController.swift */; };
 		D16E57E729081C490008226F /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E57E629081C490008226F /* TeamViewController.swift */; };
+		D16E57E92908209C0008226F /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E57E82908209C0008226F /* UserActionCell.swift */; };
+		D16E57EC29083FB60008226F /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E57EA29083FA50008226F /* Animal.swift */; };
 		D1C26F75290819E000C704EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C26F74290819E000C704EA /* AppDelegate.swift */; };
 		D1C26F77290819E000C704EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C26F76290819E000C704EA /* SceneDelegate.swift */; };
 		D1C26F7C290819E000C704EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C26F7A290819E000C704EA /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		D16E57E429081BB60008226F /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
 		D16E57E629081C490008226F /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		D16E57E82908209C0008226F /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
+		D16E57EA29083FA50008226F /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		D1C26F71290819E000C704EA /* DvornikovVA_HW2.10_What animal are you?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DvornikovVA_HW2.10_What animal are you?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C26F74290819E000C704EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1C26F76290819E000C704EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D16E57ED290841120008226F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D16E57EA29083FA50008226F /* Animal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D1C26F68290819E000C704EA = {
 			isa = PBXGroup;
 			children = (
@@ -106,8 +118,10 @@
 				D1C26F74290819E000C704EA /* AppDelegate.swift */,
 				D1C26F76290819E000C704EA /* SceneDelegate.swift */,
 				D1C26F7A290819E000C704EA /* Main.storyboard */,
+				D16E57E82908209C0008226F /* UserActionCell.swift */,
 				D16E57E629081C490008226F /* TeamViewController.swift */,
 				D16E57E429081BB60008226F /* AnimalViewController.swift */,
+				D16E57ED290841120008226F /* Models */,
 				D1C26FA429081AE300C704EA /* StartViewController.swift */,
 				D1C26F7D290819E100C704EA /* Assets.xcassets */,
 				D1C26F7F290819E100C704EA /* LaunchScreen.storyboard */,
@@ -266,7 +280,9 @@
 			files = (
 				D1C26F75290819E000C704EA /* AppDelegate.swift in Sources */,
 				D1C26F77290819E000C704EA /* SceneDelegate.swift in Sources */,
+				D16E57E92908209C0008226F /* UserActionCell.swift in Sources */,
 				D1C26FA529081AE300C704EA /* StartViewController.swift in Sources */,
+				D16E57EC29083FB60008226F /* Animal.swift in Sources */,
 				D16E57E529081BB60008226F /* AnimalViewController.swift in Sources */,
 				D16E57E729081C490008226F /* TeamViewController.swift in Sources */,
 			);

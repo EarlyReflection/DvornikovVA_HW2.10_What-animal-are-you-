@@ -9,10 +9,21 @@ import UIKit
 
 class AnimalViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var lenghtLabel: UILabel!
+    @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var habitatLabel: UILabel!
+    @IBOutlet weak var dietLabel: UILabel!
+    //@IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+//        activityIndicator.startAnimating()
+//        activityIndicator.hidesWhenStopped = true
+        
 
-        // Do any additional setup after loading the view.
     }
     
 
