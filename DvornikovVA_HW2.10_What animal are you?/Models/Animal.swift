@@ -20,4 +20,13 @@ struct Animal: Decodable {
     let image_link: String
 }
 
+enum Actions: String, CaseIterable {
+    case getRandomAnimal = "What animal are you?"
+    case getAnimals = "Your team"
+}
 
+enum Link: String {
+    case oneAnimal = "https://zoo-animal-api.herokuapp.com/animals/rand"
+    case thenAnimals = "https://zoo-animal-api.herokuapp.com/animals/rand/10"
+    
+}

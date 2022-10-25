@@ -7,20 +7,18 @@
 
 import UIKit
 
-enum Actions: String, CaseIterable {
-    case randomAnimal = "What animal are you?"
-    case animals = "Your team"
-}
-
-enum Link: String {
-    case oneAnimal = "https://zoo-animal-api.herokuapp.com/animals/rand"
-    case thenAnimals = "https://zoo-animal-api.herokuapp.com/animals/rand/10"
-    
-}
-
 class StartViewController: UICollectionViewController {
     
     let actions = Actions.allCases
+    
+// MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "animal" {
+            guard let animalVC = segue.destination as? AnimalViewController else { return }
+            animalVC.fetchAnimal()
+        }
+    }
     
     // MARK: UICollectionViewDataSource
     
@@ -40,58 +38,19 @@ class StartViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let userAction = actions[indexPath.item]
         
-        //тут надо добавить переходы на другие экраны!
+  
         switch userAction {
-        case .randomAnimal: oneAnimalPressed()
-        case .animals: thenAnimalsPressed()
+     
+        case .getRandomAnimal:
+            performSegue(withIdentifier: "animal", sender: nil)
+        case .getAnimals:
+            performSegue(withIdentifier: "team", sender: nil)
         }
         
     }
     
 }
 
-// MARK: - Networking
-extension StartViewController {
-    func oneAnimalPressed() {
-        guard let url = URL(string: Link.oneAnimal.rawValue) else { return }
-        
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data else {
-                print(error?.localizedDescription ?? "No error description")
-                return
-            }
-            
-            do {
-                let animal = try JSONDecoder().decode(Animal.self, from: data)
-                print(animal)
-            } catch let error {
-                print(error.localizedDescription)
-            }
-            
-        }.resume()
-        
-    }
-    
-    func thenAnimalsPressed() {
-        guard let url = URL(string: Link.thenAnimals.rawValue) else { return }
-        
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data else {
-                print(error?.localizedDescription ?? "No error description")
-                return
-            }
-            
-            do {
-                let animals = try JSONDecoder().decode([Animal].self, from: data)
-                print(animals)
-            } catch let error {
-                print(error.localizedDescription)
-            }
-        }.resume()
-
-    }
-    
-}
 
 // Задаем размеры ячейки
 extension StartViewController: UICollectionViewDelegateFlowLayout {

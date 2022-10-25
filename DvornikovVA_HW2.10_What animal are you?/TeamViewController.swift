@@ -86,3 +86,27 @@ class TeamViewController: UICollectionViewController {
     */
 
 }
+
+// MARK: - Networking
+extension TeamViewController {
+ 
+    func fetchThenAnimals() {
+        guard let url = URL(string: Link.thenAnimals.rawValue) else { return }
+        
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
+            
+            do {
+                let animals = try JSONDecoder().decode([Animal].self, from: data)
+                print(animals)
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }.resume()
+
+    }
+    
+}

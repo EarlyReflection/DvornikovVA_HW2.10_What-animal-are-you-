@@ -15,26 +15,36 @@ class AnimalViewController: UIViewController {
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var habitatLabel: UILabel!
     @IBOutlet weak var dietLabel: UILabel!
-    //@IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+   
+       var animal: Animal?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        activityIndicator.startAnimating()
-//        activityIndicator.hidesWhenStopped = true
+    }
+
+}
+
+
+// MARK: - Networking
+
+extension AnimalViewController {
+    func fetchAnimal() {
         
-
+        guard let url = URL(string: Link.oneAnimal.rawValue) else { return }
+        
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
+            
+            do {
+                self.animal = try JSONDecoder().decode(Animal.self, from: data)
+            } catch let error {
+                print(error.localizedDescription)
+            }
+            
+        }.resume()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

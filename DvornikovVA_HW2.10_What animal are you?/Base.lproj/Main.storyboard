@@ -160,18 +160,13 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="upC-Ha-2RT">
-                                <rect key="frame" x="197" y="438" width="20" height="20"/>
-                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XWD-rh-OdY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Gpq-pd-B99" firstAttribute="leading" secondItem="XWD-rh-OdY" secondAttribute="leading" constant="22" id="C0O-ew-AWb"/>
-                            <constraint firstItem="upC-Ha-2RT" firstAttribute="centerX" secondItem="diY-3r-hno" secondAttribute="centerX" id="Gqr-86-lt2"/>
                             <constraint firstItem="uKa-8d-dde" firstAttribute="leading" secondItem="XWD-rh-OdY" secondAttribute="leading" constant="22" id="Rjl-wo-Ohq"/>
                             <constraint firstItem="uKa-8d-dde" firstAttribute="centerX" secondItem="diY-3r-hno" secondAttribute="centerX" id="THW-qm-d5t"/>
-                            <constraint firstItem="upC-Ha-2RT" firstAttribute="centerY" secondItem="diY-3r-hno" secondAttribute="centerY" id="XNF-da-iTd"/>
                             <constraint firstItem="XWD-rh-OdY" firstAttribute="trailing" secondItem="uKa-8d-dde" secondAttribute="trailing" constant="22" id="Zjf-OK-EF4"/>
                             <constraint firstItem="XWD-rh-OdY" firstAttribute="trailing" secondItem="Gpq-pd-B99" secondAttribute="trailing" constant="22" id="brV-1f-Exp"/>
                             <constraint firstItem="uKa-8d-dde" firstAttribute="top" secondItem="Gpq-pd-B99" secondAttribute="bottom" constant="39" id="qru-GO-hZI"/>
@@ -180,7 +175,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="Bcn-sr-KHC"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="upC-Ha-2RT" id="Ge5-0N-gYM"/>
                         <outlet property="dietLabel" destination="B6b-ZC-KS4" id="iQc-Fj-icv"/>
                         <outlet property="habitatLabel" destination="sgw-cA-iAl" id="52l-L6-u3a"/>
                         <outlet property="imageView" destination="Gpq-pd-B99" id="IhN-Gg-GKs"/>
