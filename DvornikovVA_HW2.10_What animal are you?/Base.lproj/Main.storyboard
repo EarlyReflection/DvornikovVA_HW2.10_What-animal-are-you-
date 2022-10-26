@@ -109,7 +109,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5O-M5-a3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1422" y="459"/>
+            <point key="canvasLocation" x="1364" y="421"/>
         </scene>
         <!--Animal View Controller-->
         <scene sceneID="edV-he-tOq">
@@ -120,15 +120,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gpq-pd-B99">
-                                <rect key="frame" x="22" y="98" width="370" height="370"/>
+                                <rect key="frame" x="22" y="140.5" width="370" height="370"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Gpq-pd-B99" secondAttribute="height" multiplier="1:1" id="bgn-72-fgO"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uKa-8d-dde">
-                                <rect key="frame" x="22" y="507" width="370" height="142.5"/>
+                                <rect key="frame" x="22" y="549.5" width="370" height="142.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KK7-0y-GtJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="latin name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KK7-0y-GtJ">
                                         <rect key="frame" x="0.0" y="0.0" width="370" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -160,17 +160,28 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bA-mx-IHs" userLabel="You are">
+                                <rect key="frame" x="22" y="98" width="370" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XWD-rh-OdY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Gpq-pd-B99" firstAttribute="leading" secondItem="XWD-rh-OdY" secondAttribute="leading" constant="22" id="C0O-ew-AWb"/>
+                            <constraint firstItem="3bA-mx-IHs" firstAttribute="top" secondItem="XWD-rh-OdY" secondAttribute="top" constant="10" id="En0-S0-nvk"/>
                             <constraint firstItem="uKa-8d-dde" firstAttribute="leading" secondItem="XWD-rh-OdY" secondAttribute="leading" constant="22" id="Rjl-wo-Ohq"/>
                             <constraint firstItem="uKa-8d-dde" firstAttribute="centerX" secondItem="diY-3r-hno" secondAttribute="centerX" id="THW-qm-d5t"/>
                             <constraint firstItem="XWD-rh-OdY" firstAttribute="trailing" secondItem="uKa-8d-dde" secondAttribute="trailing" constant="22" id="Zjf-OK-EF4"/>
+                            <constraint firstItem="3bA-mx-IHs" firstAttribute="leading" secondItem="XWD-rh-OdY" secondAttribute="leading" constant="22" id="amZ-bz-QmC"/>
                             <constraint firstItem="XWD-rh-OdY" firstAttribute="trailing" secondItem="Gpq-pd-B99" secondAttribute="trailing" constant="22" id="brV-1f-Exp"/>
+                            <constraint firstItem="3bA-mx-IHs" firstAttribute="centerX" secondItem="diY-3r-hno" secondAttribute="centerX" id="cIu-E8-I2N"/>
+                            <constraint firstItem="Gpq-pd-B99" firstAttribute="top" secondItem="3bA-mx-IHs" secondAttribute="bottom" constant="10" id="lnm-rm-N7c"/>
                             <constraint firstItem="uKa-8d-dde" firstAttribute="top" secondItem="Gpq-pd-B99" secondAttribute="bottom" constant="39" id="qru-GO-hZI"/>
-                            <constraint firstItem="Gpq-pd-B99" firstAttribute="top" secondItem="XWD-rh-OdY" secondAttribute="top" constant="10" id="uyw-zS-8iw"/>
+                            <constraint firstItem="XWD-rh-OdY" firstAttribute="trailing" secondItem="3bA-mx-IHs" secondAttribute="trailing" constant="22" id="s40-Od-NoQ"/>
+                            <constraint firstItem="3bA-mx-IHs" firstAttribute="top" secondItem="XWD-rh-OdY" secondAttribute="top" constant="10" id="vj2-ye-hoY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bcn-sr-KHC"/>
@@ -178,14 +189,15 @@
                         <outlet property="dietLabel" destination="B6b-ZC-KS4" id="iQc-Fj-icv"/>
                         <outlet property="habitatLabel" destination="sgw-cA-iAl" id="52l-L6-u3a"/>
                         <outlet property="imageView" destination="Gpq-pd-B99" id="IhN-Gg-GKs"/>
+                        <outlet property="latinNameLabel" destination="KK7-0y-GtJ" id="5gr-47-UZK"/>
                         <outlet property="lenghtLabel" destination="cOP-Cf-hry" id="aQY-PS-dTJ"/>
-                        <outlet property="nameLabel" destination="KK7-0y-GtJ" id="5gr-47-UZK"/>
                         <outlet property="weightLabel" destination="z7l-Na-PEM" id="Gw6-xi-r9P"/>
+                        <outlet property="youAreLabel" destination="3bA-mx-IHs" id="aIk-Zx-1hQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gj-QW-pHz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1421.7391304347827" y="-249.10714285714283"/>
+            <point key="canvasLocation" x="1363.768115942029" y="-240.40178571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I1k-B7-qQp">
@@ -203,7 +215,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u42-ty-Fj2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-251" y="94"/>
+            <point key="canvasLocation" x="-138" y="94"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

@@ -8,21 +8,22 @@
 import UIKit
 
 class AnimalViewController: UIViewController {
-
+    
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var youAreLabel: UILabel!
+    @IBOutlet weak var latinNameLabel: UILabel!
     @IBOutlet weak var lenghtLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var habitatLabel: UILabel!
     @IBOutlet weak var dietLabel: UILabel!
-   
-       var animal: Animal?
+    
+    //var animal: Animal?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
 }
 
 
@@ -40,7 +41,24 @@ extension AnimalViewController {
             }
             
             do {
-                self.animal = try JSONDecoder().decode(Animal.self, from: data)
+                let animal = try JSONDecoder().decode(Animal.self, from: data)
+                DispatchQueue.main.async {
+                    self.youAreLabel.text = "You are \(animal.name)"
+                    self.latinNameLabel.text = "latin name: \(animal.latin_name)"
+                    self.weightLabel.text = "weight: from \(animal.weight_min) to \(animal.weight_max)"
+                    self.lenghtLabel.text = "lenght: from \(animal.length_min) to \(animal.weight_max)"
+                    self.habitatLabel.text = "habitat: \(animal.habitat)"
+                    self.dietLabel.text = "diet: \(animal.diet)"
+                }
+                
+                DispatchQueue.global().async {
+                    guard let url = URL(string: animal.image_link) else { return }
+                    guard let imageData = try? Data(contentsOf: url) else { return }
+                    DispatchQueue.main.async {
+                        self.imageView.image = UIImage(data: imageData)
+                    }
+                }
+
             } catch let error {
                 print(error.localizedDescription)
             }

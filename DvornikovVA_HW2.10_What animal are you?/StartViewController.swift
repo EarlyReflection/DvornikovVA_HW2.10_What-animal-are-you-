@@ -11,14 +11,6 @@ class StartViewController: UICollectionViewController {
     
     let actions = Actions.allCases
     
-// MARK: - Navigation
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "animal" {
-            guard let animalVC = segue.destination as? AnimalViewController else { return }
-            animalVC.fetchAnimal()
-        }
-    }
     
     // MARK: UICollectionViewDataSource
     
@@ -46,9 +38,16 @@ class StartViewController: UICollectionViewController {
         case .getAnimals:
             performSegue(withIdentifier: "team", sender: nil)
         }
-        
     }
     
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "animal" {
+            guard let animalVC = segue.destination as? AnimalViewController else { return }
+            animalVC.fetchAnimal()
+        }
+    }
 }
 
 
@@ -57,5 +56,4 @@ extension StartViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: UIScreen.main.bounds.width - 100, height: UIScreen.main.bounds.width - 100)
     }
-    
 }
