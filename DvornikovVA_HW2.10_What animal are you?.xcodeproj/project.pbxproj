@@ -20,6 +20,7 @@
 		D1C26F96290819E100C704EA /* DvornikovVA_HW2_10_What_animal_are_you_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C26F95290819E100C704EA /* DvornikovVA_HW2_10_What_animal_are_you_UITests.swift */; };
 		D1C26F98290819E100C704EA /* DvornikovVA_HW2_10_What_animal_are_you_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C26F97290819E100C704EA /* DvornikovVA_HW2_10_What_animal_are_you_UITestsLaunchTests.swift */; };
 		D1C26FA529081AE300C704EA /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C26FA429081AE300C704EA /* StartViewController.swift */; };
+		D1D6C063290C2A3500ECE85F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D6C062290C2A3500ECE85F /* PhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		D1C26F95290819E100C704EA /* DvornikovVA_HW2_10_What_animal_are_you_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DvornikovVA_HW2_10_What_animal_are_you_UITests.swift; sourceTree = "<group>"; };
 		D1C26F97290819E100C704EA /* DvornikovVA_HW2_10_What_animal_are_you_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DvornikovVA_HW2_10_What_animal_are_you_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D1C26FA429081AE300C704EA /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		D1D6C062290C2A3500ECE85F /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				D1C26F7A290819E000C704EA /* Main.storyboard */,
 				D16E57E82908209C0008226F /* UserActionCell.swift */,
 				D16E57E629081C490008226F /* TeamViewController.swift */,
+				D1D6C062290C2A3500ECE85F /* PhotoCell.swift */,
 				D16E57E429081BB60008226F /* AnimalViewController.swift */,
 				D16E57ED290841120008226F /* Models */,
 				D1C26FA429081AE300C704EA /* StartViewController.swift */,
@@ -282,6 +285,7 @@
 				D1C26F77290819E000C704EA /* SceneDelegate.swift in Sources */,
 				D16E57E92908209C0008226F /* UserActionCell.swift in Sources */,
 				D1C26FA529081AE300C704EA /* StartViewController.swift in Sources */,
+				D1D6C063290C2A3500ECE85F /* PhotoCell.swift in Sources */,
 				D16E57EC29083FB60008226F /* Animal.swift in Sources */,
 				D16E57E529081BB60008226F /* AnimalViewController.swift in Sources */,
 				D16E57E729081C490008226F /* TeamViewController.swift in Sources */,

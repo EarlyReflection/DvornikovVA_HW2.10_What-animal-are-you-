@@ -46,6 +46,9 @@ class StartViewController: UICollectionViewController {
         if segue.identifier == "animal" {
             guard let animalVC = segue.destination as? AnimalViewController else { return }
             animalVC.fetchAnimal()
+        } else {
+            guard let teamVC = segue.destination as? TeamViewController else { return }
+            teamVC.fetchThenAnimals()
         }
     }
 }
