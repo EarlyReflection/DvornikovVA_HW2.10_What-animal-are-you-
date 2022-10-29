@@ -53,8 +53,6 @@ class StartViewController: UICollectionViewController {
     }
 }
 
-
-// Задаем размеры ячейки
 extension StartViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: UIScreen.main.bounds.width - 100, height: UIScreen.main.bounds.width - 100)

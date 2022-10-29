@@ -43,10 +43,10 @@ extension AnimalViewController {
             do {
                 let animal = try JSONDecoder().decode(Animal.self, from: data)
                 DispatchQueue.main.async {
-                    self.youAreLabel.text = "You are \(animal.name)"
+                    self.youAreLabel.text = animal.name
                     self.latinNameLabel.text = "latin name: \(animal.latin_name)"
-                    self.weightLabel.text = "weight: from \(animal.weight_min) to \(animal.weight_max)"
-                    self.lenghtLabel.text = "lenght: from \(animal.length_min) to \(animal.weight_max)"
+                    self.weightLabel.text = "weight: \(animal.weight_min) - \(animal.weight_max)"
+                    self.lenghtLabel.text = "lenght: \(animal.length_min) - \(animal.weight_max)"
                     self.habitatLabel.text = "habitat: \(animal.habitat)"
                     self.dietLabel.text = "diet: \(animal.diet)"
                 }

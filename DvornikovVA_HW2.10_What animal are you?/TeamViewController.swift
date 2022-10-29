@@ -30,7 +30,9 @@ class TeamViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as! PhotoCell
-      
+        let animal = animals[indexPath.item]
+        cell.configure(with: animal)
+        cell.backgroundColor = .darkGray
         return cell
     }
 
@@ -54,7 +56,6 @@ extension TeamViewController {
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                 }
-                print(self.animals)
             } catch let error {
                 print(error.localizedDescription)
             }

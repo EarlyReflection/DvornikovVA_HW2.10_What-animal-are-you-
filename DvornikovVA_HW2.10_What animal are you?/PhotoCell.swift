@@ -11,4 +11,13 @@ class PhotoCell: UICollectionViewCell {
     
     @IBOutlet weak var animalImageView: UIImageView!
     
+    func configure(with animal: Animal) {
+        DispatchQueue.global().async {
+            guard let url = URL(string: animal.image_link) else { return }
+            guard let imageData = try? Data(contentsOf: url) else { return }
+            DispatchQueue.main.async {
+                self.animalImageView.image = UIImage(data: imageData)
+            }
+        }
+    }
 }
