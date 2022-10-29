@@ -117,9 +117,6 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="h8v-Vm-vTd"/>
-                    <connections>
-                        <segue destination="pvj-Es-W5K" kind="show" identifier="detail" id="q5y-jB-Vxf"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5O-M5-a3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gj-QW-pHz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2224" y="120"/>
+            <point key="canvasLocation" x="2115" y="93"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I1k-B7-qQp">
@@ -235,9 +232,6 @@
             <point key="canvasLocation" x="-138" y="94"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="q5y-jB-Vxf"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

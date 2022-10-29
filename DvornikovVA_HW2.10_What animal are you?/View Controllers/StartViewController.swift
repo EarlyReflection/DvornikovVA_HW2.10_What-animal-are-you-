@@ -7,6 +7,12 @@
 
 import UIKit
 
+
+enum Actions: String, CaseIterable {
+    case getRandomAnimal = "What animal are you?"
+    case getAnimals = "Your team"
+}
+
 class StartViewController: UICollectionViewController {
     
     let actions = Actions.allCases

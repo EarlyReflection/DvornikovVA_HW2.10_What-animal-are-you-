@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1144500290D6E5A008B9788 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11444FF290D6E5A008B9788 /* NetworkManager.swift */; };
 		D16E57E529081BB60008226F /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E57E429081BB60008226F /* AnimalViewController.swift */; };
 		D16E57E729081C490008226F /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E57E629081C490008226F /* TeamViewController.swift */; };
 		D16E57E92908209C0008226F /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E57E82908209C0008226F /* UserActionCell.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D11444FF290D6E5A008B9788 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D16E57E429081BB60008226F /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
 		D16E57E629081C490008226F /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		D16E57E82908209C0008226F /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
@@ -86,6 +88,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D11444FE290D6DDA008B9788 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				D1C26F7F290819E100C704EA /* LaunchScreen.storyboard */,
+				D1C26F7A290819E000C704EA /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		D1144501290D6E77008B9788 /* Servises */ = {
+			isa = PBXGroup;
+			children = (
+				D11444FF290D6E5A008B9788 /* NetworkManager.swift */,
+			);
+			path = Servises;
+			sourceTree = "<group>";
+		};
+		D16BB582290D605C00AC6275 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D16E57E82908209C0008226F /* UserActionCell.swift */,
+				D1D6C062290C2A3500ECE85F /* PhotoCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D16BB583290D609800AC6275 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D16E57E629081C490008226F /* TeamViewController.swift */,
+				D16E57E429081BB60008226F /* AnimalViewController.swift */,
+				D1C26FA429081AE300C704EA /* StartViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D16BB584290D60D900AC6275 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				D1C26F7D290819E100C704EA /* Assets.xcassets */,
+				D1C26F74290819E000C704EA /* AppDelegate.swift */,
+				D1C26F76290819E000C704EA /* SceneDelegate.swift */,
+				D1C26F82290819E100C704EA /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 		D16E57ED290841120008226F /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,18 +166,12 @@
 		D1C26F73290819E000C704EA /* DvornikovVA_HW2.10_What animal are you? */ = {
 			isa = PBXGroup;
 			children = (
-				D1C26F74290819E000C704EA /* AppDelegate.swift */,
-				D1C26F76290819E000C704EA /* SceneDelegate.swift */,
-				D1C26F7A290819E000C704EA /* Main.storyboard */,
-				D16E57E82908209C0008226F /* UserActionCell.swift */,
-				D16E57E629081C490008226F /* TeamViewController.swift */,
-				D1D6C062290C2A3500ECE85F /* PhotoCell.swift */,
-				D16E57E429081BB60008226F /* AnimalViewController.swift */,
-				D1C26FA429081AE300C704EA /* StartViewController.swift */,
+				D11444FE290D6DDA008B9788 /* StoryBoards */,
+				D16BB584290D60D900AC6275 /* Supporting files */,
+				D16BB582290D605C00AC6275 /* Views */,
+				D16BB583290D609800AC6275 /* View Controllers */,
 				D16E57ED290841120008226F /* Models */,
-				D1C26F7D290819E100C704EA /* Assets.xcassets */,
-				D1C26F7F290819E100C704EA /* LaunchScreen.storyboard */,
-				D1C26F82290819E100C704EA /* Info.plist */,
+				D1144501290D6E77008B9788 /* Servises */,
 			);
 			path = "DvornikovVA_HW2.10_What animal are you?";
 			sourceTree = "<group>";
@@ -281,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1144500290D6E5A008B9788 /* NetworkManager.swift in Sources */,
 				D1C26F75290819E000C704EA /* AppDelegate.swift in Sources */,
 				D1C26F77290819E000C704EA /* SceneDelegate.swift in Sources */,
 				D16E57E92908209C0008226F /* UserActionCell.swift in Sources */,
@@ -467,7 +511,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CACQHX277T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "DvornikovVA_HW2.10_What animal are you?/Info.plist";
+				INFOPLIST_FILE = "DvornikovVA_HW2.10_What animal are you?/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -495,7 +539,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CACQHX277T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "DvornikovVA_HW2.10_What animal are you?/Info.plist";
+				INFOPLIST_FILE = "DvornikovVA_HW2.10_What animal are you?/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
