@@ -33,38 +33,25 @@ class AnimalViewController: UIViewController {
 
 extension AnimalViewController {
     func fetchAnimal() {
-        
-        guard let url = URL(string: Link.oneAnimal.rawValue) else { return }
-        
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data else {
-                print(error?.localizedDescription ?? "No error description")
-                return
-            }
+        NetworkManager.shared.fetchOne { animal in
+            self.animal = animal
+            print(self.animal ?? "")
             
-            do {
-                let animal = try JSONDecoder().decode(Animal.self, from: data)
+            self.youAreLabel.text = self.animal.name
+            self.latinNameLabel.text = "latin name: \(self.animal.latin_name)"
+            self.weightLabel.text = "weight: \(self.animal.weight_min) - \(self.animal.weight_max)"
+            self.lenghtLabel.text = "lenght: \(self.animal.length_min) - \(self.animal.weight_max)"
+            self.habitatLabel.text = "habitat: \(self.animal.habitat)"
+            self.dietLabel.text = "diet: \(self.animal.diet)"
+            
+            DispatchQueue.global().async {
+                guard let url = URL(string: self.animal.image_link) else { return }
+                guard let imageData = try? Data(contentsOf: url) else { return }
                 DispatchQueue.main.async {
-                    self.youAreLabel.text = animal.name
-                    self.latinNameLabel.text = "latin name: \(animal.latin_name)"
-                    self.weightLabel.text = "weight: \(animal.weight_min) - \(animal.weight_max)"
-                    self.lenghtLabel.text = "lenght: \(animal.length_min) - \(animal.weight_max)"
-                    self.habitatLabel.text = "habitat: \(animal.habitat)"
-                    self.dietLabel.text = "diet: \(animal.diet)"
+                    self.imageView.image = UIImage(data: imageData)
                 }
-                
-                DispatchQueue.global().async {
-                    guard let url = URL(string: animal.image_link) else { return }
-                    guard let imageData = try? Data(contentsOf: url) else { return }
-                    DispatchQueue.main.async {
-                        self.imageView.image = UIImage(data: imageData)
-                    }
-                }
-
-            } catch let error {
-                print(error.localizedDescription)
             }
-            
-        }.resume()
+        }
     }
 }
+// Надо вынести работу с получением картинки в сетевой слой!

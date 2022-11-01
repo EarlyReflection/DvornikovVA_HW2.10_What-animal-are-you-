@@ -13,21 +13,21 @@ class TeamViewController: UICollectionViewController {
     
     let itemsPerRow: CGFloat = 2
     let sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
-
-
-
+    
+    
+    
     // MARK: UICollectionViewDataSource
-
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return animals.count
     }
-
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as! PhotoCell
         let animal = animals[indexPath.item]
@@ -35,34 +35,21 @@ class TeamViewController: UICollectionViewController {
         cell.backgroundColor = .darkGray
         return cell
     }
-
-
+    
+    
 }
 
 // MARK: - Networking
 extension TeamViewController {
- 
-    func fetchThenAnimals() {
-        guard let url = URL(string: Link.thenAnimals.rawValue) else { return }
-        
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data else {
-                print(error?.localizedDescription ?? "No error description")
-                return
-            }
-            
-            do {
-                self.animals = try JSONDecoder().decode([Animal].self, from: data)
-                DispatchQueue.main.async {
-                    self.collectionView.reloadData()
-                }
-            } catch let error {
-                print(error.localizedDescription)
-            }
-        }.resume()
-
-    }
     
+    func fetchThenAnimals() {
+        NetworkManager.shared.fetchThen { animals in
+            self.animals = animals
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }
+    }
 }
 
 extension TeamViewController: UICollectionViewDelegateFlowLayout {
@@ -74,7 +61,7 @@ extension TeamViewController: UICollectionViewDelegateFlowLayout {
         
         return CGSize(width: withPerItem, height: withPerItem)
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         sectionInserts
     }

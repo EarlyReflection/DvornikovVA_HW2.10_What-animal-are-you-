@@ -21,3 +21,4 @@ class PhotoCell: UICollectionViewCell {
         }
     }
 }
+// Надо вынести работу с получением картинки в сетевой слой!
