@@ -28,7 +28,9 @@ class NetworkManager {
             }
             
             do {
-                let animals = try JSONDecoder().decode([Animal].self, from: data)
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                let animals = try decoder.decode([Animal].self, from: data)
                 DispatchQueue.main.async {
                     closure(animals)
                 }
@@ -49,7 +51,9 @@ class NetworkManager {
             }
             
             do {
-                let animal = try JSONDecoder().decode(Animal.self, from: data)
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                let animal = try decoder.decode(Animal.self, from: data)
                 DispatchQueue.main.async {
                     closure(animal)
                 }

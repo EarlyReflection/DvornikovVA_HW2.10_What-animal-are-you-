@@ -38,14 +38,14 @@ extension AnimalViewController {
             print(self.animal ?? "")
             
             self.youAreLabel.text = self.animal.name
-            self.latinNameLabel.text = "latin name: \(self.animal.latin_name)"
-            self.weightLabel.text = "weight: \(self.animal.weight_min) - \(self.animal.weight_max)"
-            self.lenghtLabel.text = "lenght: \(self.animal.length_min) - \(self.animal.weight_max)"
+            self.latinNameLabel.text = "latin name: \(self.animal.latinName)"
+            self.weightLabel.text = "weight: \(self.animal.weightMin) - \(self.animal.weightMax)"
+            self.lenghtLabel.text = "lenght: \(self.animal.lengthMin) - \(self.animal.weightMax)"
             self.habitatLabel.text = "habitat: \(self.animal.habitat)"
             self.dietLabel.text = "diet: \(self.animal.diet)"
             
             DispatchQueue.global().async {
-                guard let url = URL(string: self.animal.image_link) else { return }
+                guard let url = URL(string: self.animal.imageLink) else { return }
                 guard let imageData = try? Data(contentsOf: url) else { return }
                 DispatchQueue.main.async {
                     self.imageView.image = UIImage(data: imageData)

@@ -7,17 +7,17 @@
 
 struct Animal: Decodable {
     let name: String
-    let latin_name: String
-    let animal_type: String
-    let active_time: String
-    let length_min: String
-    let length_max: String
-    let weight_min: String
-    let weight_max: String
+    let latinName: String
+    let animalType: String
+    let activeTime: String
+    let lengthMin: String
+    let lengthMax: String
+    let weightMin: String
+    let weightMax: String
     let habitat: String
     let diet: String
-    let geo_range: String
-    let image_link: String
+    let geoRange: String
+    let imageLink: String
 }
 
 
