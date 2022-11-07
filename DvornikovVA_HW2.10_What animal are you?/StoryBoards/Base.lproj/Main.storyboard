@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Start View Controller-->
+        <!--Buttons View Controller-->
         <scene sceneID="40G-ku-BWz">
             <objects>
-                <collectionViewController id="Upr-Gm-iDV" customClass="StartViewController" customModule="DvornikovVA_HW2_10_What_animal_are_you_" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="Upr-Gm-iDV" customClass="ButtonsViewController" customModule="DvornikovVA_HW2_10_What_animal_are_you_" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="QgB-g9-ufl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

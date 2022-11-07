@@ -9,17 +9,11 @@ import UIKit
 
 class TeamViewController: UICollectionViewController {
     
-    var animals: [Animal] = []
+    private var animals: [Animal] = []
+    private var url = "https://zoo-animal-api.herokuapp.com/animals/rand/10"
     
-    let itemsPerRow: CGFloat = 2
-    let sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
-    
+    private let itemsPerRow: CGFloat = 2
+    private let sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     
     // MARK: UICollectionViewDataSource
     
@@ -37,13 +31,10 @@ class TeamViewController: UICollectionViewController {
     }
     
     
-}
-
-// MARK: - Networking
-extension TeamViewController {
+    // MARK: - Networking
     
-    func fetchThenAnimals() {
-        NetworkManager.shared.fetchThen { animals in
+    func fetchTeam() {
+        NetworkManager.shared.fetchThen(url: url) { animals in
             self.animals = animals
             DispatchQueue.main.async {
                 self.collectionView.reloadData()

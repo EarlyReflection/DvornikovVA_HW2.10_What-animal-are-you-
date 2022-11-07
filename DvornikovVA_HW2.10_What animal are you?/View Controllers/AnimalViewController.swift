@@ -17,15 +17,9 @@ class AnimalViewController: UIViewController {
     @IBOutlet weak var habitatLabel: UILabel!
     @IBOutlet weak var dietLabel: UILabel!
     
-    var animal: Animal!
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-    }
-    
+    private var animal: Animal!
+    private var url = "https://zoo-animal-api.herokuapp.com/animals/rand"
+
 }
 
 
@@ -33,10 +27,9 @@ class AnimalViewController: UIViewController {
 
 extension AnimalViewController {
     func fetchAnimal() {
-        NetworkManager.shared.fetchOne { animal in
+        NetworkManager.shared.fetchOne(url: url) { animal in
             self.animal = animal
-            print(self.animal ?? "")
-            
+    
             self.youAreLabel.text = self.animal.name
             self.latinNameLabel.text = "latin name: \(self.animal.latinName)"
             self.weightLabel.text = "weight: \(self.animal.weightMin) - \(self.animal.weightMax)"

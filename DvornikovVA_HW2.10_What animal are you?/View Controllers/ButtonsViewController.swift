@@ -9,11 +9,11 @@ import UIKit
 
 
 enum Actions: String, CaseIterable {
-    case getRandomAnimal = "What animal are you?"
+    case getAnimal = "What animal are you?"
     case getAnimals = "Your team"
 }
 
-class StartViewController: UICollectionViewController {
+class ButtonsViewController: UICollectionViewController {
     
     let actions = Actions.allCases
     
@@ -39,7 +39,7 @@ class StartViewController: UICollectionViewController {
   
         switch userAction {
      
-        case .getRandomAnimal:
+        case .getAnimal:
             performSegue(withIdentifier: "animal", sender: nil)
         case .getAnimals:
             performSegue(withIdentifier: "team", sender: nil)
@@ -54,13 +54,14 @@ class StartViewController: UICollectionViewController {
             animalVC.fetchAnimal()
         } else {
             guard let teamVC = segue.destination as? TeamViewController else { return }
-            teamVC.fetchThenAnimals()
+            teamVC.fetchTeam()
         }
     }
 }
 
-extension StartViewController: UICollectionViewDelegateFlowLayout {
+extension ButtonsViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: UIScreen.main.bounds.width - 100, height: UIScreen.main.bounds.width - 100)
     }
 }
+ 
