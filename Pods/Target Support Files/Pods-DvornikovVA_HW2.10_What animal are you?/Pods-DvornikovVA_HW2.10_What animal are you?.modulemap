@@ -1,0 +1,6 @@
+framework module Pods_DvornikovVA_HW2_10_What_animal_are_you_ {
+  umbrella header "Pods-DvornikovVA_HW2.10_What animal are you?-umbrella.h"
+
+  export *
+  module * { export * }
+}
