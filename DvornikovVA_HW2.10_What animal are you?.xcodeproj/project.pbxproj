@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C8F9ECCC900E9A2A3C2B596 /* Pods_DvornikovVA_HW2_10_What_animal_are_you_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE8F1879EF384DD874076CD /* Pods_DvornikovVA_HW2_10_What_animal_are_you_Tests.framework */; };
+		4C03927166A631A75E98BBDB /* Pods_DvornikovVA_HW2_10_What_animal_are_you__DvornikovVA_HW2_10_What_animal_are_you_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54135824765DF67D80160A76 /* Pods_DvornikovVA_HW2_10_What_animal_are_you__DvornikovVA_HW2_10_What_animal_are_you_UITests.framework */; };
 		D1144500290D6E5A008B9788 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11444FF290D6E5A008B9788 /* NetworkManager.swift */; };
 		D16E57E529081BB60008226F /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E57E429081BB60008226F /* AnimalViewController.swift */; };
 		D16E57E729081C490008226F /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E57E629081C490008226F /* TeamViewController.swift */; };
@@ -22,6 +24,7 @@
 		D1C26F98290819E100C704EA /* DvornikovVA_HW2_10_What_animal_are_you_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C26F97290819E100C704EA /* DvornikovVA_HW2_10_What_animal_are_you_UITestsLaunchTests.swift */; };
 		D1C26FA529081AE300C704EA /* ButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C26FA429081AE300C704EA /* ButtonsViewController.swift */; };
 		D1D6C063290C2A3500ECE85F /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D6C062290C2A3500ECE85F /* PhotoCell.swift */; };
+		F2C9D174D57FDAE96AB3F7A2 /* Pods_DvornikovVA_HW2_10_What_animal_are_you_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E139EFC595C99E90F79345 /* Pods_DvornikovVA_HW2_10_What_animal_are_you_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1180B9B8018D27F826CF4092 /* Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests.release.xcconfig"; path = "Target Support Files/Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests/Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests.release.xcconfig"; sourceTree = "<group>"; };
+		2754E14A374E673B8A5BD1AF /* Pods-DvornikovVA_HW2.10_What animal are you?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DvornikovVA_HW2.10_What animal are you?.release.xcconfig"; path = "Target Support Files/Pods-DvornikovVA_HW2.10_What animal are you?/Pods-DvornikovVA_HW2.10_What animal are you?.release.xcconfig"; sourceTree = "<group>"; };
+		4FE8F1879EF384DD874076CD /* Pods_DvornikovVA_HW2_10_What_animal_are_you_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DvornikovVA_HW2_10_What_animal_are_you_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54135824765DF67D80160A76 /* Pods_DvornikovVA_HW2_10_What_animal_are_you__DvornikovVA_HW2_10_What_animal_are_you_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DvornikovVA_HW2_10_What_animal_are_you__DvornikovVA_HW2_10_What_animal_are_you_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		775E2D58B914FBCD97FB90F3 /* Pods-DvornikovVA_HW2.10_What animal are you?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DvornikovVA_HW2.10_What animal are you?.debug.xcconfig"; path = "Target Support Files/Pods-DvornikovVA_HW2.10_What animal are you?/Pods-DvornikovVA_HW2.10_What animal are you?.debug.xcconfig"; sourceTree = "<group>"; };
+		8785D3249AC2AF2DC9098842 /* Pods-DvornikovVA_HW2.10_What animal are you?Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DvornikovVA_HW2.10_What animal are you?Tests.release.xcconfig"; path = "Target Support Files/Pods-DvornikovVA_HW2.10_What animal are you?Tests/Pods-DvornikovVA_HW2.10_What animal are you?Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C4E139EFC595C99E90F79345 /* Pods_DvornikovVA_HW2_10_What_animal_are_you_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DvornikovVA_HW2_10_What_animal_are_you_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11444FF290D6E5A008B9788 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D16E57E429081BB60008226F /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
 		D16E57E629081C490008226F /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +71,8 @@
 		D1C26F97290819E100C704EA /* DvornikovVA_HW2_10_What_animal_are_you_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DvornikovVA_HW2_10_What_animal_are_you_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D1C26FA429081AE300C704EA /* ButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
 		D1D6C062290C2A3500ECE85F /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		E33FE9B66D71104D22D0C509 /* Pods-DvornikovVA_HW2.10_What animal are you?Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DvornikovVA_HW2.10_What animal are you?Tests.debug.xcconfig"; path = "Target Support Files/Pods-DvornikovVA_HW2.10_What animal are you?Tests/Pods-DvornikovVA_HW2.10_What animal are you?Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FED142B6935661D54B43F055 /* Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests.debug.xcconfig"; path = "Target Support Files/Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests/Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2C9D174D57FDAE96AB3F7A2 /* Pods_DvornikovVA_HW2_10_What_animal_are_you_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8F9ECCC900E9A2A3C2B596 /* Pods_DvornikovVA_HW2_10_What_animal_are_you_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,12 +96,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C03927166A631A75E98BBDB /* Pods_DvornikovVA_HW2_10_What_animal_are_you__DvornikovVA_HW2_10_What_animal_are_you_UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180B2BE4A7C2FE572C89BE33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4E139EFC595C99E90F79345 /* Pods_DvornikovVA_HW2_10_What_animal_are_you_.framework */,
+				54135824765DF67D80160A76 /* Pods_DvornikovVA_HW2_10_What_animal_are_you__DvornikovVA_HW2_10_What_animal_are_you_UITests.framework */,
+				4FE8F1879EF384DD874076CD /* Pods_DvornikovVA_HW2_10_What_animal_are_you_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D11444FE290D6DDA008B9788 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +175,8 @@
 				D1C26F8A290819E100C704EA /* DvornikovVA_HW2.10_What animal are you?Tests */,
 				D1C26F94290819E100C704EA /* DvornikovVA_HW2.10_What animal are you?UITests */,
 				D1C26F72290819E000C704EA /* Products */,
+				DB2D2EDD4976BF0EE38E0A19 /* Pods */,
+				180B2BE4A7C2FE572C89BE33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,6 +220,20 @@
 			path = "DvornikovVA_HW2.10_What animal are you?UITests";
 			sourceTree = "<group>";
 		};
+		DB2D2EDD4976BF0EE38E0A19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				775E2D58B914FBCD97FB90F3 /* Pods-DvornikovVA_HW2.10_What animal are you?.debug.xcconfig */,
+				2754E14A374E673B8A5BD1AF /* Pods-DvornikovVA_HW2.10_What animal are you?.release.xcconfig */,
+				FED142B6935661D54B43F055 /* Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests.debug.xcconfig */,
+				1180B9B8018D27F826CF4092 /* Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests.release.xcconfig */,
+				E33FE9B66D71104D22D0C509 /* Pods-DvornikovVA_HW2.10_What animal are you?Tests.debug.xcconfig */,
+				8785D3249AC2AF2DC9098842 /* Pods-DvornikovVA_HW2.10_What animal are you?Tests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -200,9 +241,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1C26F9B290819E100C704EA /* Build configuration list for PBXNativeTarget "DvornikovVA_HW2.10_What animal are you?" */;
 			buildPhases = (
+				E619263AEBE1DEBCA91EFB53 /* [CP] Check Pods Manifest.lock */,
 				D1C26F6D290819E000C704EA /* Sources */,
 				D1C26F6E290819E000C704EA /* Frameworks */,
 				D1C26F6F290819E000C704EA /* Resources */,
+				CE064DEC5DD9FC1CD713DA17 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +260,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1C26F9E290819E100C704EA /* Build configuration list for PBXNativeTarget "DvornikovVA_HW2.10_What animal are you?Tests" */;
 			buildPhases = (
+				6866570A05FAB6CEA468B30D /* [CP] Check Pods Manifest.lock */,
 				D1C26F83290819E100C704EA /* Sources */,
 				D1C26F84290819E100C704EA /* Frameworks */,
 				D1C26F85290819E100C704EA /* Resources */,
@@ -235,9 +279,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1C26FA1290819E100C704EA /* Build configuration list for PBXNativeTarget "DvornikovVA_HW2.10_What animal are you?UITests" */;
 			buildPhases = (
+				F9A1145E27A655DDD52A9F4A /* [CP] Check Pods Manifest.lock */,
 				D1C26F8D290819E100C704EA /* Sources */,
 				D1C26F8E290819E100C704EA /* Frameworks */,
 				D1C26F8F290819E100C704EA /* Resources */,
+				35A5F2C23621E4BB2640669B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -318,6 +364,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35A5F2C23621E4BB2640669B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests/Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests/Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests/Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6866570A05FAB6CEA468B30D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DvornikovVA_HW2.10_What animal are you?Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE064DEC5DD9FC1CD713DA17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DvornikovVA_HW2.10_What animal are you?/Pods-DvornikovVA_HW2.10_What animal are you?-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DvornikovVA_HW2.10_What animal are you?/Pods-DvornikovVA_HW2.10_What animal are you?-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DvornikovVA_HW2.10_What animal are you?/Pods-DvornikovVA_HW2.10_What animal are you?-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E619263AEBE1DEBCA91EFB53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DvornikovVA_HW2.10_What animal are you?-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9A1145E27A655DDD52A9F4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D1C26F6D290819E000C704EA /* Sources */ = {
@@ -504,6 +653,7 @@
 		};
 		D1C26F9C290819E100C704EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 775E2D58B914FBCD97FB90F3 /* Pods-DvornikovVA_HW2.10_What animal are you?.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -532,6 +682,7 @@
 		};
 		D1C26F9D290819E100C704EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2754E14A374E673B8A5BD1AF /* Pods-DvornikovVA_HW2.10_What animal are you?.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -560,6 +711,7 @@
 		};
 		D1C26F9F290819E100C704EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E33FE9B66D71104D22D0C509 /* Pods-DvornikovVA_HW2.10_What animal are you?Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -580,6 +732,7 @@
 		};
 		D1C26FA0290819E100C704EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8785D3249AC2AF2DC9098842 /* Pods-DvornikovVA_HW2.10_What animal are you?Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -600,6 +753,7 @@
 		};
 		D1C26FA2290819E100C704EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FED142B6935661D54B43F055 /* Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -618,6 +772,7 @@
 		};
 		D1C26FA3290819E100C704EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1180B9B8018D27F826CF4092 /* Pods-DvornikovVA_HW2.10_What animal are you?-DvornikovVA_HW2.10_What animal are you?UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class AnimalViewController: UIViewController {
     
@@ -19,26 +20,26 @@ class AnimalViewController: UIViewController {
     
     private var animal: Animal!
     private var url = "https://zoo-animal-api.herokuapp.com/animals/rand"
-
-}
-
-
-// MARK: - Networking
-
-extension AnimalViewController {
+    
+    
+    private func outletInit() {
+        youAreLabel.text = self.animal.name
+        latinNameLabel.text = "latin name: \(self.animal.latinName ?? "")"
+        weightLabel.text = "weight: \(animal.weightMin ?? "") - \(animal.weightMax ?? "")"
+        lenghtLabel.text = "lenght: \(animal.lengthMin ?? "") - \(animal.weightMax ?? "")"
+        habitatLabel.text = "habitat: \(animal.habitat ?? "")"
+        dietLabel.text = "diet: \(animal.diet ?? "")"
+    }
+    
+    // MARK: - Networking
+    
     func fetchAnimal() {
         NetworkManager.shared.fetchOne(url: url) { animal in
             self.animal = animal
-    
-            self.youAreLabel.text = self.animal.name
-            self.latinNameLabel.text = "latin name: \(self.animal.latinName)"
-            self.weightLabel.text = "weight: \(self.animal.weightMin) - \(self.animal.weightMax)"
-            self.lenghtLabel.text = "lenght: \(self.animal.lengthMin) - \(self.animal.weightMax)"
-            self.habitatLabel.text = "habitat: \(self.animal.habitat)"
-            self.dietLabel.text = "diet: \(self.animal.diet)"
+            self.outletInit()
             
             DispatchQueue.global().async {
-                guard let url = URL(string: self.animal.imageLink) else { return }
+                guard let url = URL(string: self.animal.imageLink ?? "") else { return }
                 guard let imageData = try? Data(contentsOf: url) else { return }
                 DispatchQueue.main.async {
                     self.imageView.image = UIImage(data: imageData)
@@ -46,5 +47,34 @@ extension AnimalViewController {
             }
         }
     }
+    
+    func fetchAlamofireAnimal() {
+        AF.request(url)
+            .validate()
+            .responseJSON { dataResponce in
+                switch dataResponce.result {
+                    
+                case .success(let value):
+                    guard let animalData = value as? [String: Any] else { return}
+                    let animal = Animal(animalData: animalData)
+                    
+                    self.animal = animal
+                    self.outletInit()
+                    
+                    
+                    DispatchQueue.global().async {
+                        guard let url = URL(string: self.animal.imageLink ?? "") else { return }
+                        guard let imageData = try? Data(contentsOf: url) else { return }
+                        DispatchQueue.main.async {
+                            self.imageView.image = UIImage(data: imageData)
+                        }
+                    }
+                    
+                case .failure( let error):
+                    print(error)
+                }
+            }
+    }
 }
-// Надо вынести работу с получением картинки в сетевой слой!
+
+

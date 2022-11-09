@@ -33,11 +33,11 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWt-aC-OUd">
-                                            <rect key="frame" x="60" y="39.5" width="240" height="41"/>
+                                            <rect key="frame" x="60" y="39" width="240" height="42.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="240" id="bF4-bO-htY"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="34"/>
+                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="35"/>
                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -50,7 +50,7 @@
                                 <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="33"/>
+                                        <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -67,6 +67,8 @@
                     <connections>
                         <segue destination="pvj-Es-W5K" kind="show" identifier="animal" id="28P-3c-pGN"/>
                         <segue destination="kcZ-2x-Gyj" kind="show" identifier="team" id="dSZ-bb-L2S"/>
+                        <segue destination="kcZ-2x-Gyj" kind="show" identifier="alamofireTeam" id="Qe2-CB-yeh"/>
+                        <segue destination="pvj-Es-W5K" kind="show" identifier="alamofireAnimal" id="1FP-eg-UID"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yo2-8a-Yy4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -120,7 +122,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5O-M5-a3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1412" y="-261"/>
+            <point key="canvasLocation" x="1541" y="-269"/>
         </scene>
         <!--Animal View Controller-->
         <scene sceneID="edV-he-tOq">
@@ -211,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gj-QW-pHz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2115" y="93"/>
+            <point key="canvasLocation" x="1543" y="430"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="I1k-B7-qQp">
@@ -232,6 +234,10 @@
             <point key="canvasLocation" x="-138" y="94"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="1FP-eg-UID"/>
+        <segue reference="Qe2-CB-yeh"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

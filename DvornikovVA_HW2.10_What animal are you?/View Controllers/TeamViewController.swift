@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class TeamViewController: UICollectionViewController {
     
@@ -41,6 +42,29 @@ class TeamViewController: UICollectionViewController {
             }
         }
     }
+    
+    func fetchAlamofireTeam() {
+        AF.request(url)
+            .validate()
+            .responseJSON { dataResponse in
+                switch dataResponse.result {
+                case .success(let value):
+                    guard let animalsData = value as? [[String : Any]] else { return }
+                    for animalData in animalsData {
+                        let animal = Animal(animalData: animalData)
+                        
+                        self.animals.append(animal)
+                    }
+                    DispatchQueue.main.async {
+                        self.collectionView.reloadData()
+                    }
+                    
+                case .failure(let error):
+                    print(error)
+                }
+            }
+    }
+    
 }
 
 extension TeamViewController: UICollectionViewDelegateFlowLayout {
